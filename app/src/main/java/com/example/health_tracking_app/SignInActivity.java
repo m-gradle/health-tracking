@@ -38,6 +38,13 @@ public class SignInActivity extends AppCompatActivity {
             }
         });
 
+        btnCreateAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setContentView(R.layout.activity_create_account);
+            }
+        });
+
     }
 
     private void init()
