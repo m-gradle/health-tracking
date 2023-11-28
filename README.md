@@ -1,4 +1,4 @@
-# health-tracking
+# MyHealth Trainer
 
 MyHealth Trainer app will be used to track different aspects of you health,
 whether that be with what you are eating, or tracking workout information.
