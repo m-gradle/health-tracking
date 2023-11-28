@@ -31,9 +31,10 @@ public class SignInActivity extends AppCompatActivity {
                 {
                     setContentView(R.layout.activity_dashboard);
                 }
-
-                Toast.makeText(SignInActivity.this, "Not enough Information", Toast.LENGTH_LONG).show();
-
+                else
+                {
+                    Toast.makeText(SignInActivity.this, "Not enough Information", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
