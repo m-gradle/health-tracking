@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class DashboardActivity extends AppCompatActivity {
 
     private Button workoutTracker;
+    private Button foodButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +26,15 @@ public class DashboardActivity extends AppCompatActivity {
         frameLayout.addView(childView);
 
         workoutTracker = findViewById(R.id.workoutButton);
+        foodButton = findViewById(R.id.foodButton);
 
         workoutTracker.setOnClickListener(v -> {
-
             Toast.makeText(DashboardActivity.this, "Going to workout", Toast.LENGTH_LONG).show();
             startActivity(new Intent(DashboardActivity.this, InputWorkoutActivity.class));
+        });
+        foodButton.setOnClickListener(v -> {
+            Toast.makeText(DashboardActivity.this, "Going to enter food", Toast.LENGTH_LONG).show();
+            startActivity(new Intent(DashboardActivity.this, EnterFoodActivity.class));
         });
     }
 
