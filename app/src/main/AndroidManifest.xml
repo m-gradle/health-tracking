@@ -19,6 +19,11 @@
             android:name=".DashboardActivity"
             android:exported="false" />
         <activity
+            android:name=".InputWorkoutActivity"
+            android:exported="false"/>
+
+
+        <activity
             android:name=".SignInActivity"
             android:exported="true">
             <intent-filter>
