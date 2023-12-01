@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class EnterFoodActivity extends AppCompatActivity {
 
-    private EditText etFoodName, etTotalFat, etSodium, etTotalCarbs, etTotalSugar, etFiber, etProtein;
+    private EditText etFoodName, etTotalCalories, etTotalFat, etSodium, etTotalCarbs, etTotalSugar, etProtein;
     private Button btnSave;
 
     @Override
@@ -24,11 +24,11 @@ public class EnterFoodActivity extends AppCompatActivity {
         frameLayout.addView(childView);
 
         etFoodName = findViewById(R.id.etFoodName);
+        etTotalCalories = findViewById(R.id.etTotalCalories);
         etTotalFat = findViewById(R.id.etTotalFat);
         etSodium = findViewById(R.id.etSodium);
         etTotalCarbs = findViewById(R.id.etTotalCarbs);
         etTotalSugar = findViewById(R.id.etTotalSugar);
-        etFiber = findViewById(R.id.etFiber);
         etProtein = findViewById(R.id.etProtein);
         btnSave = findViewById(R.id.btnSave);
 
@@ -46,7 +46,6 @@ public class EnterFoodActivity extends AppCompatActivity {
         String sodium = etSodium.getText().toString().trim();
         String totalCarbs = etTotalCarbs.getText().toString().trim();
         String totalSugar = etTotalSugar.getText().toString().trim();
-        String fiber = etFiber.getText().toString().trim();
         String protein = etProtein.getText().toString().trim();
 
         // TODO: Save these values to Firebase database
@@ -57,11 +56,11 @@ public class EnterFoodActivity extends AppCompatActivity {
 
         // Clear the fields after saving
         etFoodName.setText("");
+        etTotalCalories.setText("");
         etTotalFat.setText("");
         etSodium.setText("");
         etTotalCarbs.setText("");
         etTotalSugar.setText("");
-        etFiber.setText("");
         etProtein.setText("");
 
         finish();
