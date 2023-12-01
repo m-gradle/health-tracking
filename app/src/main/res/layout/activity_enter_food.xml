@@ -21,6 +21,21 @@
             android:layout_marginBottom="16dp"/>
 
         <TextView
+            android:id="@+id/tvTotalCaloriesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Calories:"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/etTotalCalories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
             android:id="@+id/tvTotalFatLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -74,21 +89,6 @@
 
         <EditText
             android:id="@+id/etTotalSugar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:padding="16dp"
-            android:layout_marginBottom="16dp"/>
-
-        <TextView
-            android:id="@+id/tvFiberLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fiber (g):"
-            android:textSize="18sp"/>
-
-        <EditText
-            android:id="@+id/etFiber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"

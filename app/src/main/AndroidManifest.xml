@@ -24,6 +24,10 @@
         <activity
             android:name=".EnterFoodActivity"
             android:allowEmbedded="false"/>
+        <activity
+            android:name=".MacrosActivity"
+            android:allowEmbedded="false"/>
+
 
 
         <activity
