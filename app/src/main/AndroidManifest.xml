@@ -24,6 +24,9 @@
         <activity
             android:name=".EnterFoodActivity"
             android:allowEmbedded="false"/>
+        <activity
+            android:name=".WorkoutHistoryActivity"
+            android:exported="false"/>
 
 
         <activity
